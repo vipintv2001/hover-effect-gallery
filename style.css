@@ -1,0 +1,224 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+  background: url("https://c4.wallpaperflare.com/wallpaper/735/642/441/background-pictures-nature-hd-images-1920x1200-wallpaper-preview.jpg");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+header .container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+header h1 {
+  color: white;
+}
+
+header ul {
+  display: flex;
+  gap: 1.5em;
+  list-style: none;
+  font-size: 0.9em;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header ul li a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.banner .main_heading {
+  font-size: 30px;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5em;
+}
+
+.main_heading h1 {
+  transition: all 0.7s ease-in;
+}
+
+.main_heading span {
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main h2 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.image_box {
+  perspective: 1000px;
+}
+
+.image_box img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease;
+}
+
+.image_box h4 {
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.translate_x:hover {
+  transform: translateX(50px);
+}
+
+.translate_y:hover {
+  transform: translateY(50px);
+}
+
+.translate_z:hover {
+  transform: translateZ(100px);
+}
+
+.scale_x:hover {
+  transform: scaleX(1.5);
+}
+
+.scale_y:hover {
+  transform: scaleY(0.5);
+}
+
+.scale_z:hover {
+  transform: scale(1.2);
+}
+
+.scale_z {
+  transform-style: preserve-3d;
+}
+
+.rotate_x:hover {
+  transform: rotate(45deg);
+}
+
+.rotate_y:hover {
+  transform: rotateY(45deg);
+}
+
+.rotate_z:hover {
+  transform: rotateZ(45deg);
+}
+
+.skew_x:hover {
+  transform: skewX(30deg);
+}
+
+.skew_y:hover {
+  transform: skewY(30deg);
+}
+
+.skew:hover {
+  transform: skew(30deg);
+}
+
+.matrix:hover {
+  transform: matrix(1, 0.5, -0.5, 1, 50, 100);
+}
+
+.matrix3d:hover {
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 50, 0, 1);
+}
+
+.main_heading h1:hover {
+  transform: scale(1.1);
+}
+
+.link_buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.link_buttons button {
+  color: white;
+  background-color: #1e90ff;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+}
+
+.link_buttons button a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.link_buttons button a:hover {
+  color: rgb(67, 57, 57);
+}
+
+footer .container {
+  background-color: rgba(48, 45, 45, 0.91);
+  margin-top: 2em;
+}
+
+footer .container ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.5em 0;
+  gap: 1.5em;
+}
+
+.footer_para {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding-top: 1em;
+}
+
+.footer_para h3 {
+  font-size: 20px;
+  color: white;
+}
+
+footer .container ul li {
+  font-size: 30px;
+}
+
+footer .container ul li a {
+  color: aliceblue;
+}
+
+footer .container ul li a:hover {
+  color: blue;
+}

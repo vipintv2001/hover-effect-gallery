@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <header>
+        <div class="container">
+          <h1>Photo Gallery</h1>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="main_heading">
+        <h1><span>Welcome To</span><br />Hover Effect Gallery</h1>
+      </div>
+      <div class="link_buttons">
+        <button><a href="#translate">Translate</a></button>
+        <button><a href="#scale">Scale</a></button>
+        <button><a href="#rotate">Rotate</a></button>
+        <button><a href="#skew">Skew</a></button>
+        <button><a href="#matrix">Matrix</a></button>
+      </div>
+    </div>
+    <main>
+      <h2 id="translate">Translate (Move an Element)</h2>
+      <section>
+        <div class="image_box">
+          <img
+            src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg"
+            alt=""
+            class="translate_x"
+          />
+          <h4>Translate X</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk="
+            alt=""
+            class="translate_y"
+          />
+          <h4>Translate Y</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=612x612&w=0&k=20&c=8xbZvMyptEaqMW46diKakhVgkPkAzBi5l7J1yveCZFk="
+            alt=""
+            class="translate_z"
+          />
+          <h4>Translate Z</h4>
+        </div>
+      </section>
+      <h2 id="scale">Scale (Resize an Element)</h2>
+      <section>
+        <div class="image_box">
+          <img
+            src="https://img.global.news.samsung.com/uk/wp-content/uploads/2018/07/ai-reading_main_1-612x408.jpg"
+            alt=""
+            class="scale_x"
+          />
+          <h4>Scale X</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://res.cloudinary.com/dgnvposhn/images/f_auto,q_auto/v1712078483/wordpress_assets/moonreflection-612x408-1/moonreflection-612x408-1.jpg?_i=AA"
+            alt=""
+            class="scale_y"
+          />
+          <h4>Scale Y</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://www.ncakey.org/wp-content/uploads/2018/03/office-building.jpg"
+            alt=""
+            class="scale_z"
+          />
+          <h4>Scale</h4>
+        </div>
+      </section>
+      <h2 id="rotate">Rotate (Rotate an Element)</h2>
+      <section>
+        <div class="image_box">
+          <img
+            src="https://www.knittingindustry.com/uploads/8605/Arco1-612x408-boxed.jpg"
+            alt=""
+            class="rotate_x"
+          />
+          <h4>Rotate X</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://www.bunnycart.com/blog/wp-content/uploads/2018/07/Tips-to-keep-fish-happy-and-healthy-inside-the-Aquarium.jpg"
+            alt=""
+            class="rotate_y"
+          />
+          <h4>Rotate Y</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYb7Nft0RzuGJVp3ycycja0pMYATL3japiQ&s"
+            alt=""
+            class="rotate_z"
+          />
+          <h4>Rotate Z</h4>
+        </div>
+      </section>
+      <h2 id="skew">Skew (Shear an Element)</h2>
+      <section>
+        <div class="image_box">
+          <img
+            src="https://nycbigcitylit.com/wp-content/uploads/2022/07/istockphoto-1132309126-612x612-1.jpg"
+            alt=""
+            class="skew_x"
+          />
+          <h4>Skew X</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://www.innovationintextiles.com/uploads/6793/IB_media_research_shanghai-612x408-boxed.jpg"
+            alt=""
+            class="skew_y"
+          />
+          <h4>Skew Y</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://www.knittingindustry.com/uploads/9055/SPX-Color+-GettyImages-1386872446-612x408-boxed.jpg"
+            alt=""
+            class="skew"
+          />
+          <h4>Skew</h4>
+        </div>
+      </section>
+      <h2 id="matrix">Matrix (Combine Multiple Transforms)</h2>
+      <section>
+        <div class="image_box">
+          <img
+            src="https://i0.wp.com/nenow.in/wp-content/uploads/2024/12/gettyimages-2174692141-612x612-1.jpg?fit=612%2C408&quality=89&ssl=1"
+            alt=""
+            class="matrix"
+          />
+          <h4>Matrix</h4>
+        </div>
+        <div class="image_box">
+          <img
+            src="https://cdn.prod.website-files.com/5f02f2c93eab87a6ea84e2f3/670cf85b2540b5cc6a91e2cb_Blue%20Team%20612x408.webp"
+            alt=""
+            class="matrix3d"
+          />
+          <h4>Matrix 3D</h4>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer_para">
+          <h3>follow us on</h3>
+        </div>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
