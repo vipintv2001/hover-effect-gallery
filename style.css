@@ -78,6 +78,7 @@ section {
 main h2 {
   text-align: center;
   margin: 1em 0;
+  transition: color 0.7s ease-in-out;
 }
 
 .image_box {
@@ -221,4 +222,41 @@ footer .container ul li a {
 
 footer .container ul li a:hover {
   color: blue;
+}
+
+#rotate:target {
+  color: rgba(114, 110, 110, 0.926);
+  animation: revertColor 3s forwards;
+}
+
+#translate:target {
+  color: rgba(114, 110, 110, 0.926);
+  animation: revertColor 3s forwards;
+}
+
+#scale:target {
+  color: rgba(114, 110, 110, 0.926);
+  animation: revertColor 3s forwards;
+}
+
+#skew:target {
+  color: rgba(114, 110, 110, 0.926);
+  animation: revertColor 3s forwards;
+}
+
+#matrix:target {
+  color: rgba(114, 110, 110, 0.926);
+  animation: revertColor 3s forwards;
+}
+
+@keyframes revertColor {
+  0% {
+    color: grey;
+  }
+  99% {
+    color: grey;
+  }
+  100% {
+    color: black;
+  }
 }
