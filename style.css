@@ -22,6 +22,7 @@ body {
 header .container {
   max-width: 1200px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
@@ -266,22 +267,40 @@ footer .container ul li a:hover {
   section {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+  }
+
+  .banner .main_heading {
+    font-size: 22px;
+    padding-top: 2em;
+  }
 }
 
 @media (max-width: 480px) {
   section {
     grid-template-columns: 1fr;
   }
-}
 
-header .container {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1em;
-}
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+  }
 
-.banner .main_heading {
-  font-size: 22px;
-  padding-top: 2em;
+  .banner .main_heading {
+    font-size: 22px;
+    padding-top: 2em;
+  }
+
+  .link_buttons button {
+    font-size: 14px;
+    padding: 0.2em;
+    border-radius: 6px;
+  }
 }
