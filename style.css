@@ -127,15 +127,15 @@ main h2 {
 }
 
 .rotate_x:hover {
-  transform: rotate(45deg);
+  transform: rotate(180deg);
 }
 
 .rotate_y:hover {
-  transform: rotateY(45deg);
+  transform: rotateY(180deg);
 }
 
 .rotate_z:hover {
-  transform: rotateZ(45deg);
+  transform: rotateZ(180deg);
 }
 
 .skew_x:hover {
@@ -302,5 +302,14 @@ footer .container ul li a:hover {
     font-size: 14px;
     padding: 0.2em;
     border-radius: 6px;
+  }
+
+  .image_box img {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
